@@ -1,0 +1,8 @@
+# Jetbrains IDEs
+.idea
+
+# Gradle
+.gradle
+
+# Build
+/build/
