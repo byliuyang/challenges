@@ -10,7 +10,12 @@ repositories {
 }
 
 dependencies {
-    testCompile("junit", "junit", "4.12")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.5.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.2")
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 configure<JavaPluginConvention> {
