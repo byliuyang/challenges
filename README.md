@@ -1,7 +1,7 @@
 # Challenges
 Clean coding solutions written in Java
 
-## What is included?
+## What are included?
 | #            | Description                                                                                                                    | Solution                                                                           | Performance                     |
 | ------------ | --------------------------------------                                                                                         | -----------------------------------------------------                              | ------------------------------- |
 | 1            | [Two Sum](https://leetcode.com/problems/two-sum)                                                                               | [TwoSum.java](src/main/java/TwoSum.java)                                           | Beat **98.8%**                  |
