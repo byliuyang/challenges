@@ -3,7 +3,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class LongestPalindromicSubstringTest {
+/**
+ * https://leetcode.com/problems/longest-palindromic-substring
+ *
+ * @author Harry Liu
+ * @version Sept 22th, 2019
+ */
+class LongestPalindromicSubstringTest {
     private LongestPalindromicSubstring longestPalindromicSubstring;
 
     @BeforeEach
@@ -14,10 +20,10 @@ public class LongestPalindromicSubstringTest {
     @Test
     void longestPalindrome() {
         class TestCase {
-            String inputString;
-            String expSubstring;
+            private String inputString;
+            private String expSubstring;
 
-            TestCase(String inputString, String expSubstring) {
+            private TestCase(String inputString, String expSubstring) {
                 this.inputString = inputString;
                 this.expSubstring = expSubstring;
             }

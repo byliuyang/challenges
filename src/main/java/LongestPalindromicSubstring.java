@@ -1,3 +1,9 @@
+/**
+ * https://leetcode.com/problems/longest-palindromic-substring
+ *
+ * @author Harry Liu
+ * @version Sept 22th, 2019
+ */
 public class LongestPalindromicSubstring {
     public String longestPalindrome(String s) {
         int strLen = s.length();

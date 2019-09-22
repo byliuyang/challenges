@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * https://leetcode.com/problems/two-sum/
+ * https://leetcode.com/problems/two-sum
  *
  * @author Harry Liu
  * @version Sept 11th, 2019

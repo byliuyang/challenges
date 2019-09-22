@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ * https://leetcode.com/problems/longest-substring-without-repeating-characters
  *
  * @author Harry Liu
  * @version Sept 12th, 2019

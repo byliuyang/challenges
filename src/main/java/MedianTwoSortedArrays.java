@@ -1,5 +1,5 @@
 /**
- * https://leetcode.com/problems/median-of-two-sorted-arrays/
+ * https://leetcode.com/problems/median-of-two-sorted-arrays
  *
  * @author Harry Liu
  * @version Sept 21th, 2019
