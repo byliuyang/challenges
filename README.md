@@ -2,7 +2,7 @@
 Clean coding challenge solutions written in Java
 
 ## What is included?
-| Challenge #  | Description                                                                                                                    | Solution                                                                         | Unit Test                                                                      |
+| #            | Description                                                                                                                    | Solution                                                                         | Unit Test                                                                      |
 | ------------ | --------------------------------------                                                                                         | -----------------------------------------------------                            | -------------------------------                                                |
 | 1            | [Two Sum](https://leetcode.com/problems/two-sum)                                                                               | [TwoSum.java](src/main/java/TwoSum.java)                                         |                                                                                |
 | 2            | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers)                                                               | [AddTwoNumbers.java](src/main/java/AddTwoNumbers.java)                           |                                                                                |
