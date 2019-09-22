@@ -1,5 +1,5 @@
 # Challenges
-Clean coding challenge solutions written in Java
+Clean coding solutions written in Java
 
 ## What is included?
 | #            | Description                                                                                                                    | Solution                                                                           | Performance                     |
