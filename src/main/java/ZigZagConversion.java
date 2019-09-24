@@ -1,3 +1,9 @@
+/**
+ * https://leetcode.com/problems/zigzag-conversion
+ *
+ * @author Harry Liu
+ * @version Sept 23th, 2019
+ */
 public class ZigZagConversion {
     public String convert(String s, int numRows) {
         if (numRows < 2) {
