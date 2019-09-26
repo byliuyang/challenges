@@ -10,6 +10,7 @@ Clean coding solutions written in Java
 | 4            | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)                                       | [MedianTwoSortedArrays.java](src/main/java/MedianTwoSortedArrays.java)             | Beat **100.00%**                |
 | 5            | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)                                   | [LongestPalindromicSubstring.java](src/main/java/LongestPalindromicSubstring.java) | Beat **86.88%**                 |
 | 6            | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion)                                                           | [ZigZagConversion.java](src/main/java/ZigZagConversion.java)                       | Beat **95.76%**                 |
+| 7            | [Reverse Integer](https://leetcode.com/problems/reverse-integer)                                                               | [ReverseInteger.java](src/main/java/ReverseInteger.java)                           | Beat **100%**                   |
 
 ## FAQs
 ### I saw some of the solutions are not beating 100% of submissions, should I still use them as reference for interview preparation?
