@@ -11,6 +11,7 @@ Clean coding solutions written in Java
 | 5            | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)                                   | [LongestPalindromicSubstring.java](src/main/java/LongestPalindromicSubstring.java) | Beat **86.88%**                 |
 | 6            | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion)                                                           | [ZigZagConversion.java](src/main/java/ZigZagConversion.java)                       | Beat **95.76%**                 |
 | 7            | [Reverse Integer](https://leetcode.com/problems/reverse-integer)                                                               | [ReverseInteger.java](src/main/java/ReverseInteger.java)                           | Beat **100%**                   |
+| 8            | [String to Integer](https://leetcode.com/problems/string-to-integer-atoi)                                                      | [StringToInteger.java](src/main/java/StringToInteger.java)                         | Beat **100%**                   |
 
 ## FAQs
 ### I saw some of the solutions are not beating 100% of submissions, should I still use them as reference for interview preparation?
