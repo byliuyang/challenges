@@ -12,6 +12,7 @@ Clean coding solutions written in Java
 | 6            | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion)                                                           | [ZigZagConversion.java](src/main/java/ZigZagConversion.java)                       | Beat **95.76%**                 |
 | 7            | [Reverse Integer](https://leetcode.com/problems/reverse-integer)                                                               | [ReverseInteger.java](src/main/java/ReverseInteger.java)                           | Beat **100%**                   |
 | 8            | [String to Integer](https://leetcode.com/problems/string-to-integer-atoi)                                                      | [StringToInteger.java](src/main/java/StringToInteger.java)                         | Beat **100%**                   |
+| 914          | [X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards)                                 | [GroupsOfCards.java](src/main/java/GroupsOfCards.java)                             | Beat **74.39%**                 |
 
 ## FAQs
 ### I saw some of the solutions are not beating 100% of submissions, should I still use them as reference for interview preparation?
