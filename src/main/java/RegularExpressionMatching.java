@@ -1,6 +1,7 @@
 /**
  * @author Harry Liu
  * @version Jan 21th, 2020
+ *
  * @challenge https://leetcode.com/problems/regular-expression-matching
  */
 
@@ -28,116 +29,116 @@ public class RegularExpressionMatching {
             boolean[][] computed,
             boolean[][] mem,
             String text,
-            int textIdx,
+            int textStartAt,
             int textLen,
             String pattern,
-            int patternIdx,
+            int patternStartAt,
             int patternLen
     ) {
-        if (computed[textIdx][patternIdx]) {
-            return mem[textIdx][patternIdx];
+        if (computed[textStartAt][patternStartAt]) {
+            return mem[textStartAt][patternStartAt];
         }
 
-        if (hasNoCharLeft(patternIdx, patternLen)) {
-            boolean res = hasNoCharLeft(textIdx, textLen);
-            return memorize(computed, mem, textIdx, patternIdx, res);
+        if (hasNoCharLeft(patternStartAt, patternLen)) {
+            boolean res = hasNoCharLeft(textStartAt, textLen);
+            return memorize(computed, mem, textStartAt, patternStartAt, res);
         }
 
-        if (hasOneCharLeft(patternIdx, patternLen)) {
-            boolean res = hasOneCharLeft(textIdx, textLen)
-                    && isSingleCharMatch(text, textIdx, textLen, pattern, patternIdx, patternLen);
-            return memorize(computed, mem, textIdx, patternIdx, res);
+        if (hasOneCharLeft(patternStartAt, patternLen)) {
+            boolean res = hasOneCharLeft(textStartAt, textLen)
+                    && isSingleCharMatch(text, textStartAt, textLen, pattern, patternStartAt, patternLen);
+            return memorize(computed, mem, textStartAt, patternStartAt, res);
         }
 
-        char patternNextChar = pattern.charAt(patternIdx + 1);
+        char patternNextChar = pattern.charAt(patternStartAt + 1);
 
         if (patternNextChar != ZERO_OR_MORE) {
-            if (!isSingleCharMatch(text, textIdx, textLen, pattern, patternIdx, patternLen)) {
-                return memorize(computed, mem, textIdx, patternIdx, false);
+            if (!isSingleCharMatch(text, textStartAt, textLen, pattern, patternStartAt, patternLen)) {
+                return memorize(computed, mem, textStartAt, patternStartAt, false);
             }
             boolean res = matchNextCharAndPattern(
-                    computed, mem, text, textIdx, textLen, pattern, patternIdx, patternLen);
-            return memorize(computed, mem, textIdx, patternIdx, res);
+                    computed, mem, text, textStartAt, textLen, pattern, patternStartAt, patternLen);
+            return memorize(computed, mem, textStartAt, patternStartAt, res);
         }
 
-        if (hasNoCharLeft(textIdx, textLen)) {
+        if (hasNoCharLeft(textStartAt, textLen)) {
             boolean res = skipZeroOrMoreMatcher(
-                    computed, mem, text, textIdx, textLen, pattern, patternIdx, patternLen);
-            return memorize(computed, mem, textIdx, patternIdx, res);
+                    computed, mem, text, textStartAt, textLen, pattern, patternStartAt, patternLen);
+            return memorize(computed, mem, textStartAt, patternStartAt, res);
         }
 
-        if (!isSingleCharMatch(text, textIdx, textLen, pattern, patternIdx, patternLen)) {
+        if (!isSingleCharMatch(text, textStartAt, textLen, pattern, patternStartAt, patternLen)) {
             boolean res = skipZeroOrMoreMatcher(
-                    computed, mem, text, textIdx, textLen, pattern, patternIdx, patternLen);
-            return memorize(computed, mem, textIdx, patternIdx, res);
+                    computed, mem, text, textStartAt, textLen, pattern, patternStartAt, patternLen);
+            return memorize(computed, mem, textStartAt, patternStartAt, res);
         }
 
-        boolean res = matchNextChar(computed, mem, text, textIdx, textLen, pattern, patternIdx, patternLen)
-                || skipZeroOrMoreMatcher(computed, mem, text, textIdx, textLen, pattern, patternIdx, patternLen);
+        boolean res = matchNextChar(computed, mem, text, textStartAt, textLen, pattern, patternStartAt, patternLen)
+                || skipZeroOrMoreMatcher(computed, mem, text, textStartAt, textLen, pattern, patternStartAt, patternLen);
         return memorize(
-                computed, mem, textIdx, patternIdx, res);
+                computed, mem, textStartAt, patternStartAt, res);
     }
 
     private boolean matchNextCharAndPattern(
             boolean[][] computed,
             boolean[][] mem,
             String text,
-            int textIdx,
+            int textStartAt,
             int textLen,
             String pattern,
-            int patternIdx,
+            int patternStartAt,
             int patternLen
     ) {
         return isMatchRec(
-                computed, mem, text, textIdx + 1, textLen, pattern, patternIdx + 1, patternLen);
+                computed, mem, text, textStartAt + 1, textLen, pattern, patternStartAt + 1, patternLen);
     }
 
     private boolean matchNextChar(
             boolean[][] computed,
             boolean[][] mem,
             String text,
-            int textIdx,
+            int textStartAt,
             int textLen,
             String pattern,
-            int patternIdx,
+            int patternStartAt,
             int patternLen
     ) {
-        return isMatchRec(computed, mem, text, textIdx + 1, textLen, pattern, patternIdx, patternLen);
+        return isMatchRec(computed, mem, text, textStartAt + 1, textLen, pattern, patternStartAt, patternLen);
     }
 
     private boolean skipZeroOrMoreMatcher(
             boolean[][] computed,
             boolean[][] mem,
             String text,
-            int textIdx,
+            int textStartAt,
             int textLen,
             String pattern,
-            int patternIdx,
+            int patternStartAt,
             int patternLen
     ) {
-        return isMatchRec(computed, mem, text, textIdx, textLen, pattern, patternIdx + 2, patternLen);
+        return isMatchRec(computed, mem, text, textStartAt, textLen, pattern, patternStartAt + 2, patternLen);
     }
 
     private boolean memorize(
-            boolean[][] computed, boolean[][] mem, int textIdx, int patternIdx, boolean value) {
-        computed[textIdx][patternIdx] = true;
-        mem[textIdx][patternIdx] = value;
+            boolean[][] computed, boolean[][] mem, int textStartAt, int patternStartAt, boolean value) {
+        computed[textStartAt][patternStartAt] = true;
+        mem[textStartAt][patternStartAt] = value;
         return value;
     }
 
     private boolean isSingleCharMatch(
             String text,
-            int textIdx,
+            int textStartAt,
             int textLen,
             String pattern,
-            int patternIdx,
+            int patternStartAt,
             int patternLen
     ) {
-        if (textIdx >= textLen || patternIdx >= patternLen) {
+        if (textStartAt >= textLen || patternStartAt >= patternLen) {
             return false;
         }
-        char textChar = text.charAt(textIdx);
-        char patternChar = pattern.charAt(patternIdx);
+        char textChar = text.charAt(textStartAt);
+        char patternChar = pattern.charAt(patternStartAt);
         return patternChar == ANY_CHAR || patternChar == textChar;
     }
 
