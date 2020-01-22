@@ -1,7 +1,6 @@
 /**
  * @author Harry Liu
  * @version Jan 21th, 2020
- *
  * @challenge https://leetcode.com/problems/regular-expression-matching
  */
 
@@ -9,20 +8,20 @@ public class RegularExpressionMatching {
     private static final char ANY_CHAR = '.';
     private static final char ZERO_OR_MORE = '*';
 
-    public boolean isMatch(String s, String p) {
-        if (s == null && p == null) {
+    public boolean isMatch(String text, String pattern) {
+        if (text == null && pattern == null) {
             return true;
         }
 
-        if (s == null || p == null) {
+        if (text == null || pattern == null) {
             return false;
         }
 
-        int textLen = s.length();
-        int patternLen = p.length();
+        int textLen = text.length();
+        int patternLen = pattern.length();
         boolean[][] computed = new boolean[textLen + 1][patternLen + 1];
         boolean[][] mem = new boolean[textLen + 1][patternLen + 1];
-        return isMatchRec(computed, mem, s, 0, textLen, p, 0, patternLen);
+        return isMatchRec(computed, mem, text, 0, textLen, pattern, 0, patternLen);
     }
 
     private boolean isMatchRec(
