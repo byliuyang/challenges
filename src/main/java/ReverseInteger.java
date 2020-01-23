@@ -1,8 +1,9 @@
 /**
- * https://leetcode.com/problems/reverse-integer
- *
  * @author Harry Liu
- * @version Sept 25th, 2019
+ * @version Sept 25, 2019
+ *
+ * @challenge https://leetcode.com/problems/reverse-integer
+ * @solution Add and shift the right most digit.
  */
 public class ReverseInteger {
     public int reverse(int num) {

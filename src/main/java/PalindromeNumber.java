@@ -1,6 +1,6 @@
 /**
  * @author Harry Liu
- * @version Nov 16th, 2019
+ * @version Nov 16, 2019
  *
  * @challenge https://leetcode.com/problems/palindrome-number
  * @solution Reverse half the digits and check whether they are the same as the other half.
