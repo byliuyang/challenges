@@ -1,3 +1,9 @@
+/**
+ * @author Harry Liu
+ * @version Sep 29, 2019
+ *
+ * @challenge https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards
+ */
 public class GroupsOfCards {
     public boolean hasGroupsSizeX(int[] deck) {
         if (deck == null) {

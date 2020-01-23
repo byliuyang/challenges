@@ -1,6 +1,6 @@
 /**
  * @author Harry Liu
- * @version Jan 22th, 2020
+ * @version Jan 22, 2020
  *
  * @challenge https://leetcode.com/problems/container-with-most-water
  * @solution Search from both ends. As the width decreases, only increase in water level may result in larger

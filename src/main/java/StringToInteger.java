@@ -1,3 +1,10 @@
+/**
+ * @author Harry Liu
+ * @version Sept 26, 2019
+ *
+ * @challenge https://leetcode.com/problems/string-to-integer-atoi
+ * @solution Skip spaces. Parse sign and each digit.
+ */
 public class StringToInteger {
     public int myAtoi(String str) {
         if (str == null) {
@@ -71,12 +78,7 @@ public class StringToInteger {
         if (character < '0') {
             return false;
         }
-
-        if (character > '9') {
-            return false;
-        }
-
-        return true;
+        return character <= '9';
     }
 
     private int skipWhiteSpaces(String str, int strLen) {

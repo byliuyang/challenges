@@ -1,8 +1,9 @@
 /**
- * https://leetcode.com/problems/add-two-numbers
- *
  * @author Harry Liu
- * @version Sept 11th, 2019
+ * @version Sept 11, 2019
+ *
+ * @challenge https://leetcode.com/problems/add-two-numbers
+ * @solution Create a dummy head to store the sum.
  */
 public class AddTwoNumbers {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {

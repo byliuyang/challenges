@@ -1,8 +1,9 @@
 /**
- * https://leetcode.com/problems/zigzag-conversion
- *
  * @author Harry Liu
- * @version Sept 23th, 2019
+ * @version Sept 23, 2019
+ *
+ * @challenge https://leetcode.com/problems/zigzag-conversion
+ * @solution Convert array indices into row and column numbers.
  */
 public class ZigZagConversion {
     public String convert(String s, int numRows) {

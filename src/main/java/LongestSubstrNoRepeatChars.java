@@ -1,10 +1,11 @@
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/longest-substring-without-repeating-characters
- *
  * @author Harry Liu
- * @version Sept 12th, 2019
+ * @version Sept 12, 2019
+ *
+ * @challenge https://leetcode.com/problems/longest-substring-without-repeating-characters
+ * @solution Slide window from left to right. Cache the index of the last appearance of the repeated char.
  */
 public class LongestSubstrNoRepeatChars {
     public static int lengthOfLongestSubstring(String s) {
