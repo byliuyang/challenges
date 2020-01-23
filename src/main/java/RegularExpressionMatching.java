@@ -3,8 +3,8 @@
  * @version Jan 21, 2020
  *
  * @challenge https://leetcode.com/problems/regular-expression-matching
- * @solution Skip the right number of chars for both of the input string and the pattern.
- * Memorize previously computed results.
+ * @solution Skip the right number of chars for both of the input string and the pattern. Cache previously
+ * computed results.
  */
 
 public class RegularExpressionMatching {
