@@ -34,11 +34,15 @@ public class IntegerToRoman {
                 count -= 5;
             }
 
-            writeSymbols(builder, count, symbol);
-            num %= unit;
+            num = writeBaseUnits(builder, num, unit, count, symbol);
         }
 
         return builder.toString();
+    }
+
+    private int writeBaseUnits(StringBuilder builder, int num, int unit, int count, char symbol) {
+        writeSymbols(builder, count, symbol);
+        return num % unit;
     }
 
     private int writeNineUnits(StringBuilder builder, int num, int unit, char symbol, char[] symbols, int idx) {
