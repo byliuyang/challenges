@@ -17,6 +17,7 @@ Clean coding solutions written in Java
 | 10  | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching)                                       | [RegularExpressionMatching.java](src/main/java/RegularExpressionMatching.java)     | Beat **93.19%**  |
 | 11  | [Container With Most Water](https://leetcode.com/problems/container-with-most-water)                                           | [ContainerWithMostWater.java](src/main/java/ContainerWithMostWater.java)           | Beat **95.44%**  |
 | 12  | [Integer to Roman](https://leetcode.com/problems/integer-to-roman)                                                             | [IntegerToRoman.java](src/main/java/IntegerToRoman.java)                           | Beat **80.48**   |
+| 13  | [Roman to Integer](https://leetcode.com/problems/roman-to-integer)                                                             | [RomanToInteger.java](src/main/java/RomanToInteger.java)                           | Beat **75.68**   |
 | 914 | [X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards)                                 | [GroupsOfCards.java](src/main/java/GroupsOfCards.java)                             | Beat **74.39%**  |
 
 ## FAQs
