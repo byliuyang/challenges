@@ -18,6 +18,7 @@ Clean coding solutions written in Java
 | 11  | [Container With Most Water](https://leetcode.com/problems/container-with-most-water)                                           | [ContainerWithMostWater.java](src/main/java/ContainerWithMostWater.java)           | Beat **95.44%**  |
 | 12  | [Integer to Roman](https://leetcode.com/problems/integer-to-roman)                                                             | [IntegerToRoman.java](src/main/java/IntegerToRoman.java)                           | Beat **81.64**   |
 | 13  | [Roman to Integer](https://leetcode.com/problems/roman-to-integer)                                                             | [RomanToInteger.java](src/main/java/RomanToInteger.java)                           | Beat **75.68**   |
+| 14  | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)                                                   | [LongestCommonPrefix.java](src/main/java/LongestCommonPrefix.java)                 | Beat **100.00%** |
 | 914 | [X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards)                                 | [GroupsOfCards.java](src/main/java/GroupsOfCards.java)                             | Beat **74.39%**  |
 
 ## FAQs
