@@ -41,11 +41,11 @@ public class ThreeSumClosest {
         int closestSum = sortedNums[start] + sortedNums[end];
         int closestDistance = distance(closestSum, target);
 
-        while(start < end) {
+        while (start < end) {
             int twoSum = sortedNums[start] + sortedNums[end];
             int twoSumDistance = distance(twoSum, target);
 
-            if(twoSumDistance < closestDistance) {
+            if (twoSumDistance < closestDistance) {
                 closestSum = twoSum;
                 closestDistance = twoSumDistance;
             }
