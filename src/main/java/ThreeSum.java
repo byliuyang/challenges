@@ -1,5 +1,12 @@
 import java.util.*;
 
+/**
+ * @author Harry Liu
+ * @version Feb 5, 2020
+ *
+ * @challenge https://leetcode.com/problems/3sum/
+ * @solution Pick the 1st number and run 2 sum on the rest of the unused numbers.
+ */
 public class ThreeSum {
     public List<List<Integer>> threeSum(int[] nums) {
         if (nums == null) {
