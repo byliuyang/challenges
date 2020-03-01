@@ -1,7 +1,6 @@
 /**
  * @author Harry Liu
  * @version Sept 23, 2019
- *
  * @challenge https://leetcode.com/problems/zigzag-conversion
  * @solution Convert array indices into row and column numbers.
  */

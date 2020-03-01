@@ -1,12 +1,11 @@
 /**
  * @author Harry Liu
  * @version Nov 16, 2019
- *
  * @challenge https://leetcode.com/problems/palindrome-number
  * @solution Reverse half the digits and check whether they are the same as the other half.
- *
+ * <p>
  * Note:
- *
+ * <p>
  * 1) Negative number cannot be palindrome number due to negative sign
  * 2) 0 is a palindrome number
  * 3) Other than 0 itself, numbers ended with zero is not palindrome number
@@ -27,9 +26,9 @@ public class PalindromeNumber {
         }
 
         int reversedHalf = 0;
-        while(reversedHalf < x) {
+        while (reversedHalf < x) {
             int digit = x % 10;
-            reversedHalf =  reversedHalf * 10 + digit;
+            reversedHalf = reversedHalf * 10 + digit;
             x /= 10;
         }
 

@@ -1,7 +1,6 @@
 /**
  * @author Harry Liu
  * @version Sept 11, 2019
- *
  * @challenge https://leetcode.com/problems/add-two-numbers
  * @solution Create a dummy head to store the sum.
  */

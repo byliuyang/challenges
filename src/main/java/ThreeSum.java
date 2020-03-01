@@ -1,9 +1,11 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * @author Harry Liu
  * @version Feb 5, 2020
- *
  * @challenge https://leetcode.com/problems/3sum/
  * @solution Pick the 1st number and run 2 sum on the rest of the unused numbers.
  */

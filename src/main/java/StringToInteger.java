@@ -1,7 +1,6 @@
 /**
  * @author Harry Liu
  * @version Sept 26, 2019
- *
  * @challenge https://leetcode.com/problems/string-to-integer-atoi
  * @solution Skip spaces. Parse sign and each digit.
  */

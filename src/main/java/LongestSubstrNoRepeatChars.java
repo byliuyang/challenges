@@ -3,7 +3,6 @@ import java.util.Arrays;
 /**
  * @author Harry Liu
  * @version Sept 12, 2019
- *
  * @challenge https://leetcode.com/problems/longest-substring-without-repeating-characters
  * @solution Slide window from left to right. Cache the index of the last appearance of the repeated char.
  */

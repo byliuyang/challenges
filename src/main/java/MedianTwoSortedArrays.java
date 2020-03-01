@@ -1,7 +1,6 @@
 /**
  * @author Harry Liu
  * @version Sept 21, 2019
- *
  * @challenge https://leetcode.com/problems/median-of-two-sorted-arrays
  * @solution Group numbers into two halves, each of which contains the same number of elements.
  */
