@@ -1,7 +1,6 @@
 /**
  * @author Harry Liu
  * @version Jan 29, 2020
- *
  * @challenge https://leetcode.com/problems/longest-common-prefix
  * @solution Compare every char of the first string to the rest of the strings and stop when there is a mismatch.
  */

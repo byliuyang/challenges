@@ -5,7 +5,6 @@ import java.util.Stack;
 /**
  * @author Harry Liu
  * @version Mar 1, 2020
- *
  * @challenge https://leetcode.com/problems/letter-combinations-of-a-phone-number
  * @solution Recursively loop through all the letter combinations.
  */

@@ -4,7 +4,6 @@ import java.util.Map;
 /**
  * @author Harry Liu
  * @version Sept 11, 2019
- *
  * @challenge https://leetcode.com/problems/two-sum
  * @solution Search from two sides and eliminate a group of possible combinations each time.
  */

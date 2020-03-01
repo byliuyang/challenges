@@ -1,7 +1,6 @@
 /**
  * @author Harry Liu
  * @version Sept 22, 2019
- *
  * @challenge https://leetcode.com/problems/longest-palindromic-substring
  * @solution Search palindromes around centers.
  */

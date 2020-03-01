@@ -1,7 +1,6 @@
 /**
  * @author Harry Liu
  * @version Jan 23, 2020
- *
  * @challenge https://leetcode.com/problems/integer-to-roman
  * @solution Convert 9, 5, 4 and 1 in batch.
  */

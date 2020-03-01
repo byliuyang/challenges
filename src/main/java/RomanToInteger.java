@@ -4,7 +4,6 @@ import java.util.Map;
 /**
  * @author Harry Liu
  * @version Jan 27, 2019
- *
  * @challenge https://leetcode.com/problems/roman-to-integer
  * @solution Undo previously added 1 unit when encountered 5 or 10 units.
  */

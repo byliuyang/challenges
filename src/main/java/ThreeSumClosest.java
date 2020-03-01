@@ -3,7 +3,6 @@ import java.util.Arrays;
 /**
  * @author Harry Liu
  * @version Feb 29, 2020
- *
  * @challenge https://leetcode.com/problems/3sum-closest/
  * @solution Pick the 1st number and run 2 sum closest on the rest of the numbers.
  */
