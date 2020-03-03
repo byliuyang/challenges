@@ -58,6 +58,10 @@ public class FourSum {
         return idx > start && nums[idx] == nums[idx - 1];
     }
 
+    private boolean isRepetitionReverseOrder(int[] nums, int end, int idx) {
+        return idx < end && nums[idx] == nums[idx + 1];
+    }
+
     private void collectQuadruplets(List<List<Integer>> combos, int num1, int num2, List<int[]> twoSumCombos) {
         for (int[] twoSumCombo : twoSumCombos) {
             int num3 = twoSumCombo[0];
@@ -74,11 +78,12 @@ public class FourSum {
         int left = start;
         int right = length;
         while (left < right) {
-            if (left > start && nums[left] == nums[left - 1]) {
+            if (isRepetition(nums, start, left)) {
                 left++;
                 continue;
             }
-            if (right < length && nums[right] == nums[right + 1]) {
+
+            if (isRepetitionReverseOrder(nums, length, right)) {
                 right--;
                 continue;
             }
