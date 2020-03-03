@@ -22,6 +22,7 @@ Clean coding solutions written in Java
 | 15  | [3 Sum](https://leetcode.com/problems/3sum/)                                                                                   | [ThreeSum.java](src/main/java/ThreeSum.java)                                       | Beat **92.57%**  |
 | 16  | [3 Sum Closest](https://leetcode.com/problems/3sum-closest/)                                                                   | [ThreeSumClosest.java](src/main/java/ThreeSumClosest.java)                         | Beat **86.03%**  |
 | 17  | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)                   | [TelephoneKeypad.java](src/main/java/TelephoneKeypad.java)                         | Beat **72.3%**   |
+| 18  | [4 Sum](https://leetcode.com/problems/4sum)                                                                                    | [FourSum.java](src/main/java/FourSum.java)                                         | Beat **83.12%**  |
 | 914 | [X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards)                                 | [GroupsOfCards.java](src/main/java/GroupsOfCards.java)                             | Beat **74.39%**  |
 
 ## FAQs
