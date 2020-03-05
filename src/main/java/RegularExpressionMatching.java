@@ -5,7 +5,6 @@
  * @solution Skip the right number of chars for both of the input string and the pattern. Cache previously
  * computed results.
  */
-
 public class RegularExpressionMatching {
     private static final char ANY_CHAR = '.';
     private static final char ZERO_OR_MORE = '*';
