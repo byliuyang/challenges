@@ -26,6 +26,7 @@ Clean coding solutions written in Java
 | 19  | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)                             | [RemoveNodeEndOfList.java](src/main/java/RemoveNodeEndOfList.java)                 | Beat **100.00%** |
 | 20  | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses)                                                           | [ValidParentheses.java](src/main/java/ValidParentheses.java)                       | Beat **98.71%**  |
 | 21  | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)                                                 | [MergeTwoSortedLists.java](src/main/java/MergeTwoSortedLists.java)                 | Beat **100%**    |
+| 22  | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses)                                                     | [GenerateParentheses.java](src/main/java/GenerateParentheses.java)                 | Beat **87.83%**  |
 | 914 | [X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards)                                 | [GroupsOfCards.java](src/main/java/GroupsOfCards.java)                             | Beat **74.39%**  |
 
 ## FAQs
