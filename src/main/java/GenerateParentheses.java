@@ -14,7 +14,7 @@ public class GenerateParentheses {
 
     public List<String> generateParenthesis(int n) {
         List<String> combos = new ArrayList<>();
-        if (n < 0) {
+        if (n < 1) {
             return combos;
         }
 
