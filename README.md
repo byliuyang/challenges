@@ -1,5 +1,5 @@
 # Leetcode in Java
-Clean Java solutions for Leetcode problems.
+Clean Leetcode solutions in Java
 
 ## What are included?
 
