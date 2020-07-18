@@ -1,5 +1,5 @@
-# Challenges
-Clean coding solutions written in Java
+# Leetcode in Java
+Clean Java solutions for Leetcode problems.
 
 ## What are included?
 
@@ -42,9 +42,6 @@ has big impacts on their performance percentile.
 giant function, using math tricks, or hardcode all test cases. The giant function approach sacrifices code cleanness, 
 which is one of the important grading metrics for coding interviews. The math tricks cannot assess how good you are at 
 coding, which is another grading metric of coding interview.
-
-## Author
-Harry Liu - [byliuyang](https://github.com/byliuyang)
 
 ## License
 This project is maintained under MIT license.
